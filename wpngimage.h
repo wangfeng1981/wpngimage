@@ -12,7 +12,6 @@ class wPngImage
 {
 	unsigned char* pImageData ;
 	int imageDataSize ;
-
 	int width;
 	int height ;
 	inline wPngImage(wPngImage& right){};
@@ -30,6 +29,9 @@ public:
 	inline unsigned char* getFileBinary(){return pFileBinary;};
 	inline int getImageDataSize(){return imageDataSize;};
 	inline int getFileBinarySize(){return fileBinarySize;};
+
+	inline int getWidth(){return width;};
+	inline int getHeight(){return height;};
 
 	int fileBinarySize ;
 	int fileBinaryStorage ;
